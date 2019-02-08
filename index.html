@@ -4,27 +4,66 @@
     <meta charset="UTF-8">
     <title>Player</title>
     <link rel="stylesheet" href="styles/nav.css">
+    <script  type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script>window.$ = window.jQuery = require('jquery');</script>
+    <link rel="import" href="html/my,html">
   </head>
   <body>
     <nav class="nav">
-      <div class="nav-icon nav-my">
+      <div class="nav-icon icon-my" data-id="my">
         <embed src="icon/my.svg" width="20px" height="20px"/>
-        <div class="nav2-my hidden">
-          <div>我的</div>
-          <div>本地音乐</div>
-          <div>最近播放</div>
-          <div>下载管理</div>
+      </div>
+      <div class="nav2 nav-my hidden" data-id="my">
+        <div class="info">
+          <div>
+            <span>登录</span>
+            <span>注册</span>
+          </div>
+          <div>
+            <img>
+            <div>
+              <p>id</p>
+              <div>
+                <span>动态</span>
+                <span>关注</span>
+                <span>粉丝</span>
+              </div>
+            </div>
+          </div>
         </div>
+        <div>发现音乐</div>
+        <div class="discover">
+          <div>每日推荐</div>
+          <div>私人FM</div>
+          <div>排行榜</div>
+        </div>
+        <div>本地音乐</div>
+        <div>最近播放</div>
+        <div>下载管理</div>
       </div>
-      <div class="nav-icon">
-        <embed src="icon/search.svg" width="20px" height="20px"/>
-      </div>
-      <div class="nav-icon">
+      
+      <div class="nav-icon" data-id="list">
         <embed src="icon/list.svg" width="20px" height="20px"/>
       </div>
-      <div class="nav-icon">
+      <div class="nav2 hidden" data-id="list">
+        <div>歌单</div>
+        <div>创建的歌单</div>
+        <div>收藏的歌单</div>
+      </div>
+
+      <div class="nav-icon" data-id="fav">
         <embed src="icon/favorites.svg" width="20px" height="20px"/>
+      </div>
+      <div class="nav2 hidden" data-id="fav">
+        <div>收藏</div>
+        <div>专辑</div>
+        <div>歌手</div>
+        <div>MV</div>
+        <div>专栏</div>
+      </div>
+
+      <div class="nav-icon">
+        <embed src="icon/search.svg" width="20px" height="20px"/>
       </div>
       <div class="nav-btm">
         <div class="nav-icon">
@@ -34,7 +73,10 @@
           <embed src="icon/setting.svg" width="20px" height="20px" />
         </div>
       </div>
-      
     </nav>
+    <script>
+      require('./js/nav.js');
+      require('./js/import.js')
+    </script>
   </body>
 </html>
