@@ -6,77 +6,70 @@
     <link rel="stylesheet" href="styles/nav.css">
     <script  type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script>window.$ = window.jQuery = require('jquery');</script>
-    <link rel="import" href="html/my,html">
+    <link rel="import" href="html/my.html">
+    <link rel="import" href="html/search.html">
+
   </head>
   <body>
     <nav class="nav">
       <div class="nav-icon icon-my" data-id="my">
-        <embed src="icon/my.svg" width="20px" height="20px"/>
+        <img src="icon/user.png" alt="User">
       </div>
-      <div class="nav2 nav-my hidden" data-id="my">
+      <div class="nav2 hidden" data-id="my">
         <div class="info">
-          <div>
-            <span>登录</span>
-            <span>注册</span>
-          </div>
-          <div>
-            <img>
-            <div>
-              <p>id</p>
-              <div>
-                <span>动态</span>
-                <span>关注</span>
-                <span>粉丝</span>
-              </div>
+            <!-- <div>
+              <span>登录</span>
+              <span>注册</span>
+            </div> -->
+            <div class="avatar">
+              <img src="icon/avatar.jpg">
             </div>
-          </div>
         </div>
-        <div>发现音乐</div>
-        <div class="discover">
-          <div>每日推荐</div>
-          <div>私人FM</div>
-          <div>排行榜</div>
+          <div class="title">发现音乐</div>
+          <div class="item">每日推荐</div>
+          <div class="item">私人FM</div>
+          <div class="item">排行榜</div>
+          <div class="title">我的</div>
+          <div class="item">本地音乐</div>
+          <div class="item">最近播放</div>
+          <div class="item">下载管理</div>
         </div>
-        <div>本地音乐</div>
-        <div>最近播放</div>
-        <div>下载管理</div>
-      </div>
       
       <div class="nav-icon" data-id="list">
-        <embed src="icon/list.svg" width="20px" height="20px"/>
+          <img src="icon/dot_list.png" alt="List">        
       </div>
       <div class="nav2 hidden" data-id="list">
-        <div>歌单</div>
-        <div>创建的歌单</div>
-        <div>收藏的歌单</div>
+        <div class="title">歌单</div>
+        <div class="item drop">创建的歌单</div>
+        <div class="item drop">收藏的歌单</div>
       </div>
 
       <div class="nav-icon" data-id="fav">
-        <embed src="icon/favorites.svg" width="20px" height="20px"/>
+          <img src="icon/star.png" alt="Favorites">
       </div>
       <div class="nav2 hidden" data-id="fav">
-        <div>收藏</div>
-        <div>专辑</div>
-        <div>歌手</div>
-        <div>MV</div>
-        <div>专栏</div>
+        <div class="title">收藏</div>
+        <div class="item">专辑</div>
+        <div class="item">歌手</div>
+        <div class="item">MV</div>
+        <div class="item">专栏</div>
       </div>
 
-      <div class="nav-icon">
-        <embed src="icon/search.svg" width="20px" height="20px"/>
+      <div class="nav-icon" data-id="search">
+          <img src="icon/search.png" alt="Search">        
       </div>
       <div class="nav-btm">
-        <div class="nav-icon">
-          <embed src="icon/message.svg" width="20px" height="20px" />
+        <div class="nav-icon" data-id="msg">
+            <img src="icon/msg.png" alt="Message">
         </div>
-        <div class="nav-icon">
-          <embed src="icon/setting.svg" width="20px" height="20px" />
+        <div class="nav-icon" data-id="setting">
+            <img src="icon/setting.png" alt="Setting">
         </div>
       </div>
     </nav>
     <script>
       require('./js/nav.js');
-      require('./js/import.js')
+      // require('./js/import.js')
     </script>
   </body>
 </html>
