@@ -12,11 +12,12 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav-icon icon-my" data-id="my">
-        <img src="icon/user.png" alt="User">
-      </div>
-      <div class="nav2 hidden" data-id="my">
-        <div class="info">
+      <div class="nav1 nav-my">
+        <div class="nav-icon icon-my" data-id="my">
+          <img src="icon/user.png" alt="User">
+        </div>
+        <div class="nav2 hidden" data-id="my">
+          <div class="info">
             <!-- <div>
               <span>登录</span>
               <span>注册</span>
@@ -24,47 +25,130 @@
             <div class="avatar">
               <img src="icon/avatar.jpg">
             </div>
-        </div>
+          </div>
           <div class="title">发现音乐</div>
-          <div class="item">每日推荐</div>
-          <div class="item">私人FM</div>
-          <div class="item">排行榜</div>
+          <div class="item" title="根据你的口味生成">
+            <div class="icon icon-item"></div>
+            每日推荐
+          </div>
+          <div class="item" title="享受你的音乐专属推荐">
+            <div class="icon icon-item"></div>
+            私人FM
+          </div>
+          <div class="item">
+            <div class="icon icon-item"></div>            
+            排行榜
+          </div>
           <div class="title">我的</div>
-          <div class="item">本地音乐</div>
-          <div class="item">最近播放</div>
-          <div class="item">下载管理</div>
+          <div class="drop">
+              <div class="drop-title"><div class="icon icon-fold"></div>本地音乐</div>
+              <div class="drop-items hidden">
+                <div class="item">
+                  <div class="icon icon-item"></div>
+                  歌手
+                </div>
+                  <div class="item">
+                    <div class="icon icon-item"></div>
+                    专辑
+                  </div> 
+              </div>
+          </div>
+          <div class="drop">
+              <div class="drop-title"><div class="icon icon-fold"></div>最近播放</div>
+              <div class="drop-items hidden">
+                  <div class="item">
+                    <div class="icon icon-item"></div>
+                    歌曲
+                  </div>
+                  <div class="item">
+                    <div class="icon icon-item"></div>
+                    节目
+                  </div> 
+              </div>
+          </div>
+          <div class="drop">
+              <div class="drop-title"><div class="icon icon-fold"></div>下载管理</div>
+              <div class="drop-items hidden">
+                  <div class="item">
+                    <div class="icon icon-item"></div>
+                    歌曲
+                  </div>
+                  <div class="item">
+                    <div class="icon icon-item"></div>
+                    节目
+                  </div>
+                  <div class="item">
+                    <div class="icon icon-item"></div>
+                    正在下载
+                  </div>
+              </div>
+          </div>
         </div>
-      
-      <div class="nav-icon" data-id="list">
-          <img src="icon/dot_list.png" alt="List">        
       </div>
-      <div class="nav2 hidden" data-id="list">
-        <div class="title">歌单</div>
-        <div class="item drop">创建的歌单</div>
-        <div class="item drop">收藏的歌单</div>
+      <div class="nav1 nav-list">
+        <div class="nav-icon" data-id="list">
+            <img src="icon/dot_list.png" alt="List"> 
+        </div>
+        <div class="nav2 hidden" data-id="list">
+            <div class="title">歌单</div>
+            <div class="drop">
+                <div class="drop-title"><div class="icon icon-fold"></div>创建的歌单</div>
+                <div class="drop-items hidden">
+                    <div class="item">我喜欢的</div>
+                </div>
+            </div>
+            <div class="drop">
+                <div class="drop-title"><div class="icon icon-fold"></div>收藏的歌单</div>
+                <div class="drop-items hidden">
+                    <div class="item">bala</div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="nav1 nav-fav">
+          <div class="nav-icon" data-id="fav">
+              <img src="icon/star.png" alt="Favorites">
+          </div>
+          <div class="nav2 hidden" data-id="fav">
+            <div class="title">收藏</div>
+            <div class="item">专辑</div>
+            <div class="item">歌手</div>
+            <div class="item">MV</div>
+            <div class="item">专栏</div>
+          </div>
       </div>
 
-      <div class="nav-icon" data-id="fav">
-          <img src="icon/star.png" alt="Favorites">
-      </div>
-      <div class="nav2 hidden" data-id="fav">
-        <div class="title">收藏</div>
-        <div class="item">专辑</div>
-        <div class="item">歌手</div>
-        <div class="item">MV</div>
-        <div class="item">专栏</div>
-      </div>
-
-      <div class="nav-icon" data-id="search">
+      <div class="nav1 nav-search">
+        <div class="nav-icon" data-id="search">
           <img src="icon/search.png" alt="Search">        
+        </div>
       </div>
+      
       <div class="nav-btm">
-        <div class="nav-icon" data-id="msg">
+        <div class="nav1 nav-msg">
+          <div class="nav-icon" data-id="msg">
             <img src="icon/msg.png" alt="Message">
+          </div>
+          <div class="nav2 hidden" data-id="msg">
+            <div class="title">消息</div>
+            <div class="item">@我</div>
+            <div class="item">私信</div>
+            <div class="item">评论</div>
+            <div class="item">通知</div>
+          </div>
         </div>
-        <div class="nav-icon" data-id="setting">
+        <div class="nav1 nav-set">
+          <div class="nav-icon" data-id="setting">
             <img src="icon/setting.png" alt="Setting">
+          </div>
+          <div class="nav2 hidden" data-id="setting">
+            <div class="title">设置</div>
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+          </div>
         </div>
+        
       </div>
     </nav>
     <script>

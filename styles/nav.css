@@ -24,10 +24,11 @@ html,body{
 }
 .nav2{
     position: fixed;
-    width: 120px;
+    width: 160px;
     height: 100%;
     top: 0;
     left: 40px;
+    text-align: left;
     padding: 20px 5px;
     font-size: 13px;
     /* background-color: #cdcdcd; */
@@ -35,12 +36,11 @@ html,body{
 }
 
 .title{
-    text-align: left;
     margin: 10px 0;
     box-shadow: 0px 1px 0px 0px rgba(170, 170, 170, 1);
 }
-.item{
-    text-align: center
+.drop,.item,.item2{
+    padding: 5px 0px 5px 20px;
 }
 
 .hidden{
@@ -51,4 +51,41 @@ html,body{
     width: 30px;
     height: 30px;
     border-radius: 15px;
+}
+
+.drop-title{
+    display: flex;
+    align-items: baseline;
+}
+
+.icon{
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 2px;
+    
+}
+
+.icon-fold{
+    background-image: url('../icon/fold.png');
+    width: 10px;
+    height: 10px;
+}
+
+.icon-unfold{
+    background-image: url('../icon/unf.png');
+    width: 10px;
+    height: 10px;
+}
+
+.icon-item{
+    background-image: url('../icon/unf.png');
+    width: 10px;
+    height: 10px;
+}
+
+.nav-icon-click,.item-click{
+    background-color: #efefef;
+    border-left: 3px solid #157d2e;
 }
