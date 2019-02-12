@@ -8,7 +8,8 @@ html,body{
 
 .nav{
     width:40px;
-    height:100%;
+    height:calc(100% - 100px);
+    height:-webkit-calc(100% - 100px);
     /* background-color: #cdcdcd; */
     padding-right:2px;
     text-align: center;
@@ -28,8 +29,8 @@ html,body{
 .nav2{
     position: fixed;
     width: 160px;
-    height:calc(100% - 80px);
-    height:-webkit-calc(100% - 80px);
+    height:calc(100% - 120px);
+    height:-webkit-calc(100% - 120px);
     top: 0;
     left: 42px;
     text-align: left;
@@ -94,44 +95,103 @@ html,body{
     border-left: 3px solid #157d2e;
 }
 
-/*2.11*/
 .player{
-    width: -webkit-calc(100% - ( 40px + 3px));
-    height:60px;
-    left:43px;
+    width: 100%;
+    height:100px;
+    /* left:43px; */
     position: absolute;
     bottom: 0;
-    box-shadow: 1px 1px 0px 0px rgba(170, 170, 170, 1);
+    background-color: #555;
+    color: white;
 }
-.player img{
-    width: auto;
-    height: -webkit-calc(60px - 4px)
+
+.pro-bar{
+    width: -webkit-fill-available;
+    margin: 0 10px;
 }
 .progress{
-    height: 3px;
+   
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    height: 20px;
 }
 .progress progress{
+    /* display: inline-block; */
     height: 2px;
-    width: -webkit-calc(100% - 2px);
+    width: -webkit-calc(100% - 80px);
     position: absolute;
+}
+.progress span{
+    font-size: 13px;
+}
+#duration{
+    align-self: flex-end;
 }
 .play-info{
     display: flex;
     flex-direction: row;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+.info-bar{
+    display: flex;
+    flex-direction: row;
+}
+.cover{
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("../icon/avatar.jpg");
+    width: 50px;
+    height: 50px;
+}
+.info{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.info-name{
+    font-size: 14px;
+}
+.artist{
+    font-size: 13px;
+    color: #cdcdcd;
 }
 .status{
-    width: -webkit-calc(100% - 60px);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    height: 25px;
+    align-self: flex-end;
+    margin-left: 350px;
 }
 
 .status button{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin: 0 15px;
+    border: none;
+    background-color: #555;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 .last{
-    background-image: url()
+    background-image: url("../icon/last.png");
+}
+.next{
+    background-image: url("../icon/next.png");
+}
+.play{
+    background-image: url("../icon/play.png")
+}
+.pause{
+    background-image: url("../icon/pause.png")    
+}
+.sound{
+    background-image: url("../icon/sound.png")
 }

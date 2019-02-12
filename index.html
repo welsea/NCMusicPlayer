@@ -152,14 +152,26 @@
       </div>
     </nav>
     <div class="player">
-      <div class="progress"><progress value="0" max="100" id="music-progress"></progress></div>
+      <div class="progress">
+        <span id="current-time">0:00</span>
+        <div class="pro-bar">
+           <progress value="0" max="100" id="music-progress"></progress>
+        </div>
+        <span id="duration">0:00</span>
+      </div>
       <div class="play-info">
-        <img src="icon/avatar.jpg" alt="cover">
+        <div class="info-bar">
+          <button class="cover"></button>
+          <div class="info">
+            <span class="info-name">Love of my life</span>
+            <span class="artist">Queen</span>
+          </div>
+        </div>
         <div class="status">
           <button class="last"></button>
           <button class="play"></button>
           <button class="next"></button>
-          <button></button>
+          <button class="sound"></button>
           <button></button>
         </div>
       </div>
