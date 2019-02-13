@@ -133,7 +133,7 @@ html,body{
 .play-info{
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 6px;
 }
 .info-bar{
@@ -142,43 +142,49 @@ html,body{
 }
 .cover{
     border: none;
+    background-color: #555;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-image: url("../icon/avatar.jpg");
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 .info{
-    align-self: flex-end;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
 }
 .info-name{
-    font-size: 14px;
+    font-size: 13px;
 }
 .artist{
-    font-size: 13px;
+    font-size: 12px;
     color: #cdcdcd;
 }
-.status{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.btn-row{
     align-items: center;
     height: 25px;
     align-self: flex-end;
-    margin-left: 350px;
+    margin-left: calc(100% - 500px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-
-.status button{
-    width: 20px;
-    height: 20px;
-    margin: 0 15px;
+.btn-row button{
     border: none;
     background-color: #555;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+.control button{
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+}
+.status button{
+    width: 20px;
+    height: 20px;
+    margin: 0 15px;
 }
 .last{
     background-image: url("../icon/last.png");
@@ -194,4 +200,10 @@ html,body{
 }
 .sound{
     background-image: url("../icon/sound.png")
+}
+.like{
+    background-image: url("../icon/like.png")
+}
+.loop{
+    background-image: url("../icon/shuffle.png")
 }
