@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Player</title>
-    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/section.css">
+    <link rel="stylesheet" href="assets/recommand.css">
+
     <script  type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script>window.$ = window.jQuery = require('jquery');</script>
-    <link rel="import" href="html/my.html">
-    <link rel="import" href="html/search.html">
+
+    <!-- <link rel="import" href="sections/my.html"> -->
+    <!-- <link rel="import" href="sections/search.html"> -->
+    <link rel="import" href="sections/recommand.html">
+
 
   </head>
   <body>
@@ -27,7 +33,7 @@
             </div>
           </div>
           <div class="title">发现音乐</div>
-          <div class="item" title="根据你的口味生成">
+          <div class="item" data-section="recommand" title="根据你的口味生成">
             <div class="icon icon-item"></div>
             每日推荐
           </div>
@@ -151,6 +157,7 @@
         
       </div>
     </nav>
+    <main class="content"></main>
     <div class="player">
       <div class="progress">
         <span id="current-time">0:00</span>
@@ -183,8 +190,9 @@
       </div>
     </div>
     <script>
-      require('./js/nav.js');
-      // require('./js/import.js')
+      require('./assets/nav.js');
+      require('./assets/import.js');
+      require('./assets/recommand.js')
     </script>
   </body>
 </html>
