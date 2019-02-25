@@ -1,5 +1,15 @@
 .section{
     visibility: hidden;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    left: 220px;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* width: -webkit-calc(100% - 300px); */
+    height: -webkit-calc(100% - 100px);
 }
 .section.is-shown {
     pointer-events: auto;
