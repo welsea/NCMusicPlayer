@@ -21,7 +21,7 @@
     -webkit-transform: rotate(10deg);
 }
 table {
-    width: 760px;
+    width: 95%;
     margin: 0 auto;
     border-collapse: collapse;
     border-radius: 25px;
@@ -43,11 +43,11 @@ td {
     max-width: 256px;
 }
 tr:nth-child(even) td {
-    background-color: rgb(250,250,250);
+    background-color: #fff;
 }
 
 tr:nth-child(odd) td {
-    background-color: rgb(245,245,245);
+    background-color: rgb(250,250,250);
 }
 .playAll{
     border: none;
@@ -56,5 +56,7 @@ tr:nth-child(odd) td {
 .reList{
     position: absolute;
     top:120px;
-    width: 100%;
+    width: -webkit-calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
 }

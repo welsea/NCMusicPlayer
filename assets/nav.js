@@ -14,14 +14,8 @@ $(document).on('click','.nav-icon',function(){
 
 //nav点击变色
 $(document).on('click','.nav-icon',function(){
+    $('.nav-icon').removeClass('nav-icon-click')
     $(this).toggleClass('nav-icon-click');
-    if($(this).parents().hasClass('nav-btm')){
-        $(this).parents('.nav-btm').siblings('.nav1').children('.nav-icon').removeClass('nav-icon-click');
-        $(this).parent().siblings('.nav1').children('.nav-icon').removeClass('nav-icon-click')
-    }else{
-       $(this).parent().siblings('.nav1').children('.nav-icon').removeClass('nav-icon-click');
-       $('.nav-btm').find('.nav1 .nav-icon').removeClass('nav-icon-click')
-    }
 })
 //nav2
 $(document).on('click','.item',function(){
