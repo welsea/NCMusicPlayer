@@ -82,11 +82,11 @@
           <div class="icon icon-item"></div>
           每日推荐
         </div>
-        <div class="item" title="享受你的音乐专属推荐">
+        <div class="item" data-section="fm" title="享受你的音乐专属推荐">
           <div class="icon icon-item"></div>
           私人FM
         </div>
-        <div class="item">
+        <div class="item" data-section="chart">
           <div class="icon icon-item"></div>
           排行榜
         </div>
@@ -96,11 +96,15 @@
             <div class="icon icon-fold"></div>本地音乐
           </div>
           <div class="drop-items hidden">
-            <div class="item">
+            <div class="item" data-section="l-song">
+              <div class="icon icon-item"></div>
+              歌曲
+            </div>
+            <div class="item" data-section="l-singer">
               <div class="icon icon-item"></div>
               歌手
             </div>
-            <div class="item">
+            <div class="item" data-section="l-album">
               <div class="icon icon-item"></div>
               专辑
             </div>
@@ -111,11 +115,11 @@
             <div class="icon icon-fold"></div>最近播放
           </div>
           <div class="drop-items hidden">
-            <div class="item">
+            <div class="item" data-section="r-song">
               <div class="icon icon-item"></div>
               歌曲
             </div>
-            <div class="item">
+            <div class="item" data-section="r-show">
               <div class="icon icon-item"></div>
               节目
             </div>
@@ -126,15 +130,15 @@
             <div class="icon icon-fold"></div>下载管理
           </div>
           <div class="drop-items hidden">
-            <div class="item">
+            <div class="item" data-section="d-song">
               <div class="icon icon-item"></div>
               歌曲
             </div>
-            <div class="item">
+            <div class="item" data-section="d-show">
               <div class="icon icon-item"></div>
               节目
             </div>
-            <div class="item">
+            <div class="item" data-section="d-now">
               <div class="icon icon-item"></div>
               正在下载
             </div>
@@ -148,7 +152,7 @@
             <div class="icon icon-fold"></div>创建的歌单
           </div>
           <div class="drop-items hidden">
-            <div class="item">我喜欢的</div>
+            <div class="item" data-section="list-my">我喜欢的</div>
           </div>
         </div>
         <div class="drop">
@@ -156,23 +160,23 @@
             <div class="icon icon-fold"></div>收藏的歌单
           </div>
           <div class="drop-items hidden">
-            <div class="item">bala</div>
+            <div class="item" data-section="list-bala">bala</div>
           </div>
         </div>
       </div>
       <div class="nav2 hidden" data-id="fav">
         <div class="title">收藏</div>
-        <div class="item">专辑</div>
-        <div class="item">歌手</div>
-        <div class="item">MV</div>
-        <div class="item">专栏</div>
+        <div class="item" data-section="fav-album">专辑</div>
+        <div class="item" data-section="fav-singer">歌手</div>
+        <div class="item" data-section="fav-mv">MV</div>
+        <div class="item" data-section="fav-page">专栏</div>
       </div>
       <div class="nav2 hidden" data-id="msg">
         <div class="title">消息</div>
-        <div class="item">@我</div>
-        <div class="item">私信</div>
-        <div class="item">评论</div>
-        <div class="item">通知</div>
+        <div class="item" data-section="msg-mentions">@我</div>
+        <div class="item" data-section="msg-direct">私信</div>
+        <div class="item"data-section="msg-comments">评论</div>
+        <div class="item" data-section="msg-notice">通知</div>
       </div>
       <div class="nav2 hidden" data-id="setting">
         <div class="title">设置</div>
@@ -185,7 +189,7 @@
     <main class="content"></main>
   </div>
 
-  
+
 
   <div class="player">
     <div class="progress">
