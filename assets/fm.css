@@ -1,0 +1,131 @@
+.fm-back {
+    background-image: url(../icon/avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.fm-back:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: inherit;
+    filter: blur(50px);
+    /* z-index: 2; */
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.fm-main {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fm-center {
+    width: 100%;
+    height: -webkit-calc(100% - 100px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.big-cover {
+    background-image: url(../icon/avatar.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 260px;
+    height: 260px;
+}
+
+.fm-info {
+    width: -webkit-calc(100% - 400px);
+    height: -webkit-calc(100% - 30px);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 30px 0 0 0;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.song-info {
+    width: fit-content;
+}
+
+.song-info p {
+    padding: 0;
+    margin-bottom:10px;
+    /* font-family: Verdana; */
+    font-weight: 00;
+    /* border: 1px solid rgba(0,0,0,0.7); */
+    padding: 5px;
+    width: fit-content;
+    background-color: #3b3b3b;
+    color: #fff;
+}
+
+.lyric {
+    text-align: left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    word-break: break-word;
+}
+
+.lyric::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 6px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.lyric::-webkit-scrollbar-thumb {
+    /*滚动条方块*/
+    border-radius: 6px;
+    /* -webkit-box-shadow: inset 0 0 5px #d4d4d4; */
+    background: #d4d4d4;
+}
+
+.lyric::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+    /* border-radius: 10px; */
+    /* background: #EDEDED; */
+    border: none;
+    background: none;
+}
+
+.btn {
+    width: fit-content;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 30px;
+    /* margin-bottom: 20px; */
+    /* font-size: 12px; */
+    position: absolute;
+    bottom: 35px;
+}
+
+.btn button {
+    background-color: transparent;
+    /* border-radius: 3px; */
+    background-repeat: no-repeat;
+    /* color: #fff; */
+    padding: 5px 10px;
+    font-family: "Microsoft Yahei";
+    font-weight: 100;
+    border: 1px solid rgba(0,0,0,0.7);
+    padding: 5px;
+}
+
