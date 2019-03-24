@@ -3,7 +3,7 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: "Microsoft Yahei",Arial,Verdana;
+    font-family: "Microsoft Yahei",Arial,Verdana !important;
 }
 .mainBody{
     display: flex;
@@ -19,8 +19,7 @@ html,body{
     width: -webkit-calc(100% - 10px);
     height: 100%;
     padding: 0 10px;
-    overflow-x:hidden;
-    overflow-y: scroll;
     position: relative;
+    overflow: hidden;
 }
 

@@ -1,25 +1,31 @@
 
 .dateRow{
-    text-align: right;
+    text-align: left;
+    font-size: 65px;
+    /* padding-top: 25px; */
+    padding-left: 20px;
+    font-weight: 300;
+    /* font-style: italic; */
 }
-.day{
+/* .day{
     font-size: 35px;
     right: 40px;
     position: absolute;
-}
+} */
 .date{
     position: absolute;
-    top:50px;
-    right: 15px;
+    top: 40px;
+    left: 150px;
+    font-size: 35px;
 }
-.slash{
+/* .slash{
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 50px;
     transform:rotate(10deg);
     -webkit-transform: rotate(10deg);
-}
+} */
 table {
     width: 95%;
     margin: 0 auto;
@@ -49,25 +55,54 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
     background-color: rgb(250,250,250);
 }
-.playAll{
-    border: 1px solid #136e29;
-    /* text-align: right; */
-    box-shadow: 1px 1px 1px #1a9a39;
-    /* padding-left: 30px; */
-    color: #136e29;
-    width: fit-content;
-    /* margin-left: 20px; */
-    margin: 0 10px 10px 0;
-    border-radius: 5px;
+.re-btn-row{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.re-btn-row > button{
+    margin-right: 20px;
+    border: 1px solid #000;
+    border: 1px solid #000;
+    /* margin: 0 10px 10px 0; */
+    /* border-radius: 5px; */
     padding: 5px 10px;
+    line-height: 20px;
     align-self: flex-end;
     background: #fff;
     font-family: Microsoft Yahei;
 }
 .reList{
-    position: absolute;
-    top:120px;
+    /* position: absolute;
+    top:60px; */
     width: -webkit-calc(100% - 10px);
-    display: flex;
-    flex-direction: column;
+    height: -webkit-calc(100% - 140px);
+    /* display: flex;
+    flex-direction: column; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.reList::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 6px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.reList::-webkit-scrollbar-thumb {
+    /*滚动条方块*/
+    border-radius: 6px;
+    /* -webkit-box-shadow: inset 0 0 5px #d4d4d4; */
+    background: #d4d4d4;
+}
+
+.reList::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+    /* border-radius: 10px; */
+    /* background: #EDEDED; */
+    border: none;
+    background: none;
 }

@@ -46,7 +46,8 @@
 
 .fm-info {
     width: -webkit-calc(100% - 400px);
-    height: -webkit-calc(100% - 30px);
+    /* height: -webkit-calc(100% - 30px); */
+    height: 100%;
     font-size: 14px;
     display: flex;
     flex-direction: column;
@@ -61,16 +62,18 @@
     width: fit-content;
 }
 
-.song-info p {
-    padding: 0;
-    margin-bottom:10px;
-    /* font-family: Verdana; */
-    font-weight: 00;
-    /* border: 1px solid rgba(0,0,0,0.7); */
-    padding: 5px;
+.song-info{
     width: fit-content;
-    background-color: #3b3b3b;
-    color: #fff;
+}
+
+.song-info .more-info{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-weight: 300;
+}
+.song-info .more-info>span{
+    margin-right: 15px;
 }
 
 .lyric {
