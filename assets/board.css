@@ -1,0 +1,54 @@
+.list-back {
+    background-image: url(../icon/avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.list-back:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: inherit;
+    filter: blur(50px);
+    z-index: -2;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.list-content{
+    height: -webkit-calc(100% - 30px);
+    overflow: hidden;
+}
+.list-content button{
+    background-color: transparent;
+    /* border-radius: 3px; */
+    /* background-repeat: no-repeat; */
+    /* color: #fff; */
+    padding: 5px 10px;
+    /* font-family: "Microsoft Yahei"; */
+    font-weight: 100;
+    border: 1px solid rgba(0,0,0,0.7);
+    padding: 5px;
+}
+.list-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* overflow: hidden; */
+}
+
+.list-todo{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.list-right{
+    width: -webkit-calc(100% - 150px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
