@@ -94,14 +94,31 @@
           <div class="icon icon-item"></div>
           私人FM
         </div>
-        <div class="item" data-section="board">
-          <div class="icon icon-item"></div>
-          排行榜
+        <div class="drop">
+          <div class="drop-title">
+            <div class="icon icon-fold"></div>
+            排行榜
+          </div>
+          <div class="drop-items hidden">
+            <div class="item" data-section="board">
+              <div class="icon icon-item"></div>
+              board1
+            </div>
+            <div class="item" data-section="">
+              <div class="icon icon-item"></div>
+              board2
+            </div>
+            <div class="item" data-section="">
+              <div class="icon icon-item"></div>
+              board3
+            </div>
+          </div>
         </div>
         <div class="title">我的</div>
         <div class="drop">
           <div class="drop-title">
-            <div class="icon icon-fold"></div>本地音乐
+            <div class="icon icon-fold"></div>
+            本地音乐
           </div>
           <div class="drop-items hidden">
             <div class="item" data-section="l-song">
@@ -183,7 +200,7 @@
         <div class="title">消息</div>
         <div class="item" data-section="msg-mentions">@我</div>
         <div class="item" data-section="msg-direct">私信</div>
-        <div class="item"data-section="msg-comments">评论</div>
+        <div class="item" data-section="msg-comments">评论</div>
         <div class="item" data-section="msg-notice">通知</div>
       </div>
       <div class="nav2 hidden" data-id="setting">
@@ -233,7 +250,8 @@
   <script>
     require('./assets/nav.js');
     require('./assets/import.js');
-    require('./assets/recomand.js')
+    require('./assets/recomand.js');
+    require('./assets/board.js');
   </script>
 </body>
 

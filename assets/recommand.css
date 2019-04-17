@@ -26,7 +26,7 @@
     transform:rotate(10deg);
     -webkit-transform: rotate(10deg);
 } */
-table {
+.reList table {
     width: 95%;
     margin: 0 auto;
     border-collapse: collapse;
@@ -35,26 +35,31 @@ table {
     letter-spacing: 1px;
     font-size: 0.8rem;
 }
+.reList .no{
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 10px
 
-td {
+}
+.reList td {
     /* border: 1px solid rgb(190,190,190); */
-    padding: 15px 25px;
+    padding: 15px 0;
     overflow: hidden;
     text-overflow: ellipsis; 
     white-space: nowrap; 
+
+}
+.reList .info1,
+.reList .info2,
+.reList .info3{
+    width: 200px;
+    max-width: 250px;
 }
 
-td {
-    text-align: left;
-    max-width: 256px;
-}
-tr:nth-child(even) td {
-    background-color: #fff;
-}
-
-tr:nth-child(odd) td {
-    background-color: rgb(250,250,250);
-}
 .re-btn-row{
     width: 100%;
     text-align: right;
@@ -75,16 +80,21 @@ tr:nth-child(odd) td {
 .reList{
     /* position: absolute;
     top:60px; */
-    width: -webkit-calc(100% - 10px);
-    height: -webkit-calc(100% - 140px);
-    /* display: flex;
-    flex-direction: column; */
+    /* width: -webkit-calc(100% - 10px); */
+    height: -webkit-calc(100% - 170px );
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: rgba(224,224,224,0.1);
+    /* border: 1px solid; */
+    border-radius: 15px 15px 0 0;
+    padding: 10px 5px;
+    border-bottom: 0;
 }
 
 
 .reList::-webkit-scrollbar {
+    margin-top: 10px;
+    margin-right: 5px;
     /*滚动条整体样式*/
     width: 6px;
     /*高宽分别对应横竖滚动条的尺寸*/
@@ -105,4 +115,5 @@ tr:nth-child(odd) td {
     /* background: #EDEDED; */
     border: none;
     background: none;
+    margin-top: 15px;
 }

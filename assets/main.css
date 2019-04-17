@@ -3,7 +3,7 @@ html,body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: "Microsoft Yahei",Arial,Verdana !important;
+    font-family: "Source Sans Pro", "Helvetica Neue","Microsoft Yahei", Arial, sans-serif !important;
 }
 .mainBody{
     display: flex;

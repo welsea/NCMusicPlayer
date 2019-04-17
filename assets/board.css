@@ -1,3 +1,4 @@
+
 .list-back {
     background-image: url(../icon/avatar.jpg);
     background-repeat: no-repeat;
@@ -21,6 +22,7 @@
 .list-content{
     height: -webkit-calc(100% - 30px);
     overflow: hidden;
+    padding: 10px 5px;
 }
 .list-content button{
     background-color: transparent;
@@ -37,6 +39,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: 100%;
     /* overflow: hidden; */
 }
 
@@ -51,4 +54,128 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+.list-info > div{
+    width: 130px;
+    height: 130px;
+}
+.list-creater{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.list-creater > div{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+.list-creater >span{
+    width: -webkit-calc(100% - 35px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+.info-renew{
+    font-size: 13px
+}
+
+.list-btn{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 20px;
+}
+
+.list-btn > button{
+    width: fit-content;
+    margin: 5px 0;
+}
+
+.table-btn{
+    text-align: right;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.table-btn input{
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,0.7);
+    padding: 5px;
+}
+
+.list-table{
+    /* height: -webkit-calc(100% - 170px ); */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: rgba(195,195,195,0.1);
+    /* border: 1px solid; */
+    border-radius: 15px 15px 0 0;
+    padding: 10px 5px;
+    border-bottom: 0;
+}
+.list-table table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 25px;
+    /* border: 2px solid rgb(200,200,200); */
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+.list-table .no{
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    margin-right: 10px
+}
+.list-table td {
+    /* border: 1px solid rgb(190,190,190); */
+    padding: 15px 0;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+.list-table .info1,
+.list-table .info2,
+.list-table .info3{
+    width: 200px;
+    max-width: 250px;
+}
+.list-table::-webkit-scrollbar {
+    margin-top: 10px;
+    margin-right: 5px;
+    /*滚动条整体样式*/
+    width: 6px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.list-table::-webkit-scrollbar-thumb {
+    /*滚动条方块*/
+    border-radius: 6px;
+    /* -webkit-box-shadow: inset 0 0 5px #d4d4d4; */
+    background: #d4d4d4;
+}
+
+.list-table::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+    /* border-radius: 10px; */
+    /* background: #EDEDED; */
+    border: none;
+    background: none;
+    margin-top: 15px;
+}
+.image-test{
+    background-image: url(../icon/avatar.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
