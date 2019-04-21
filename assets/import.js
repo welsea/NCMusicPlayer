@@ -26,4 +26,22 @@ $(document).ready(function(){
     $('#'+id).toggleClass('hidden');
     console.log(id)
   })
+    $('.to-comment').click(function(){
+      let id=$(this).data('section')+'-section';
+      $('.section').addClass('hidden');
+      $('#'+id).toggleClass('hidden');
+      console.log(id)
+  })
+  $('.to-song').click(function(){
+    let id=$(this).data('section')+'-section';
+      $('.section').addClass('hidden');
+      $('#'+id).toggleClass('hidden');
+      console.log(id)
+  })
+  $('.to-list').click(function(){
+    let id=$(this).data('section')+'-section';
+      $('.section').addClass('hidden');
+      $('#'+id).toggleClass('hidden');
+      console.log(id)
+  })
 })

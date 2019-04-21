@@ -1,5 +1,4 @@
-
-.dateRow{
+.dateRow {
     text-align: left;
     font-size: 65px;
     /* padding-top: 25px; */
@@ -7,17 +6,19 @@
     font-weight: 300;
     /* font-style: italic; */
 }
+
 /* .day{
     font-size: 35px;
     right: 40px;
     position: absolute;
 } */
-.date{
+.date {
     position: absolute;
     top: 40px;
     left: 150px;
     font-size: 35px;
 }
+
 /* .slash{
     position: absolute;
     top: 10px;
@@ -35,37 +36,50 @@
     letter-spacing: 1px;
     font-size: 0.8rem;
 }
-.reList .no{
+
+.reList .no {
     width: 20px;
     height: 20px;
-    border: 1px solid;
     border-radius: 20px;
     line-height: 20px;
     text-align: center;
-    margin-right: 10px
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: Adele;
+    font-style: italic;
 
 }
+
+.reList tr:hover {
+    color: #488286;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
 .reList td {
     /* border: 1px solid rgb(190,190,190); */
     padding: 15px 0;
     overflow: hidden;
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
 
 }
+
 .reList .info1,
 .reList .info2,
-.reList .info3{
+.reList .info3 {
     width: 200px;
     max-width: 250px;
 }
 
-.re-btn-row{
+.re-btn-row {
     width: 100%;
     text-align: right;
     margin-bottom: 20px;
 }
-.re-btn-row > button{
+
+.re-btn-row>button {
     margin-right: 20px;
     border: 1px solid #000;
     border: 1px solid #000;
@@ -77,14 +91,15 @@
     background: #fff;
     font-family: Microsoft Yahei;
 }
-.reList{
+
+.reList {
     /* position: absolute;
     top:60px; */
     /* width: -webkit-calc(100% - 10px); */
-    height: -webkit-calc(100% - 170px );
+    height: -webkit-calc(100% - 170px);
     overflow-y: scroll;
     overflow-x: hidden;
-    background-color: rgba(224,224,224,0.1);
+    background-color: rgba(224, 224, 224, 0.1);
     /* border: 1px solid; */
     border-radius: 15px 15px 0 0;
     padding: 10px 5px;

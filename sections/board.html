@@ -1,206 +1,135 @@
 <template class="task-template">
     <section id="board-section" class="section hidden">
-        <div class="list-content">
-            <div class="list-back"></div>
-            <div class="list-main">
-                <div class="list-todo">
-                    <div class="list-info">
-                        <div class="image-test"></div>
-                        <h3>list-name</h3>
+        <div class="board-main">
+            <div class="board board-1">
+                <div class="board-title">官方榜</div>
+                <div class="board-list">
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg" alt="">
                     </div>
-                    <div class="list-creater">
-                        <div class="image-test"></div>
-                        <span>xxxx</span>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg" alt="">
                     </div>
-                    <div class="info-renew">
-                        最近更新：<span class="renew-time">xxx-xx-xx</span>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
                     </div>
-                    <div class="list-btn">
-                        <button class="collect-list">收藏</button>
-                        <button class="list-comment">评论</button>
-                        <button class="share-list">分享</button>
-                        <button class="download-all">下载全部</button>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                </div>
 
+            </div>
+            <div class=" board board-2">
+                <div class="board-title">全球榜</div>
+                <div class="board-list">
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
+                    </div>
+                    <div class="board-item to-list" data-section="songlist">
+                        <img src="./icon/avatar.jpg">
                     </div>
                 </div>
-                <div class="list-right">
-                    <div class="table-btn">
-                        <button class="play-all">播放全部</button>
-                        <button class="check">选择</button>
-                        <input placeholder="搜索歌单内歌曲" type="text">
-                    </div>
-                    <div class="list-table">
-                        <table>
-                            <tr class="music1">
-                                <td style="width:35px">
-                                    <div class="no">1</div>
-                                </td>
-                                <td class="info1">fhskjhfakljsdhfakljsdh
-                                    fhskjhfakljsdhfakljsdh
-                                    fhskjhfakljsdhfakljsdh
-                                    fasdsdfasdfasdfasdfasdkjmusic-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music2">
-                                <td style="width:35px">
-                                    <div class="no">2</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music3">
-                                <td style="width:35px">
-                                    <div class="no">3</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music4">
-                                <td style="width:35px">
-                                    <div class="no">4</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music5">
-                                <td style="width:35px">
-                                    <div class="no">5</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music6">
-                                <td style="width:35px">
-                                    <div class="no">6</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music7">
-                                <td style="width:35px">
-                                    <div class="no">7</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music8">
-                                <td style="width:35px">
-                                    <div class="no">8</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music9">
-                                <td style="width:35px">
-                                    <div class="no">9</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music10">
-                                <td style="width:35px">
-                                    <div class="no">10</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music11">
-                                <td style="width:35px">
-                                    <div class="no">11</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music12">
-                                <td style="width:35px">
-                                    <div class="no">12</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music13">
-                                <td style="width:35px">
-                                    <div class="no">13</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music14">
-                                <td style="width:35px">
-                                    <div class="no">14</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music15">
-                                <td style="width:35px">
-                                    <div class="no">15</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music16">
-                                <td style="width:35px">
-                                    <div class="no">16</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music17">
-                                <td style="width:35px">
-                                    <div class="no">17</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music18">
-                                <td style="width:35px">
-                                    <div class="no">18</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music19">
-                                <td style="width:30px">
-                                    <div class="no">19</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                            <tr class="music20">
-                                <td style="width:35px">
-                                    <div class="no">20</div>
-                                </td>
-                                <td class="info1">music-info-1</td>
-                                <td class="info2">music-info-2</td>
-                                <td class="info3">music-info-3</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <script type="text/javascript">
-            require('./assets/board.js')
-        </script>
     </section>
 </template>
+<style scoped>
+    .board-main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .board {
+        width: 90%;
+        height: 40%;
+        padding: 5% 5% 0;
+    }
+
+    .board-list {
+        width: 92%;
+        height: 100%;
+        /* background-color: rgba(250, 250, 250, 0.7); */
+        z-index: 9;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        word-break: break-word;
+        position: relative;
+        right: -10%;
+        justify-content: space-between;
+    }
+
+    .board-list::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 6px;
+        /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+
+    .board-list::-webkit-scrollbar-thumb {
+        /*滚动条方块*/
+        border-radius: 6px;
+        /* -webkit-box-shadow: inset 0 0 5px #d4d4d4; */
+        background: #d4d4d4;
+    }
+
+    .board-list::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+        /* border-radius: 10px; */
+        /* background: #EDEDED; */
+        border: none;
+        background: none;
+    }
+
+    .board-item {
+        width: 20%;
+        margin: 0 1% 5%;
+    }
+
+    .board-title {
+        writing-mode: vertical-rl;
+        position: absolute;
+        font-size: 60px;
+        color: rgba(0, 0, 0, 0.5);
+        /* text-align: center; */
+        left: -20px;
+        top: 10%;
+    }
+
+    .board-2 .board-title{
+        top: 50%;
+    }
+    .board-item img {
+        width: 100%;
+    }
+</style>

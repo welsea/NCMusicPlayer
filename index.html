@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="assets/section.css">
   <link rel="stylesheet" href="assets/recommand.css">
   <link rel="stylesheet" href="assets/search.css">
-  <link rel="stylesheet" href="assets/fm.css">
-  <link rel="stylesheet" href="assets/board.css">
 
 
 
@@ -22,8 +20,12 @@
   <link rel="import" href="sections/my.html">
   <link rel="import" href="sections/recommand.html">
   <link rel="import" href="sections/search.html">
-  <link rel="import" href="sections/fm.html">
+  <link rel="import" href="sections/songplay.html">
   <link rel="import" href="sections/board.html">
+  <link rel="import" href="sections/songlist.html">
+  <link rel="import" href="sections/songs.html">
+  <link rel="import" href="sections/comment.html">
+
 
 
 </head>
@@ -90,29 +92,13 @@
           <div class="icon icon-item"></div>
           每日推荐
         </div>
-        <div class="item" data-section="fm" title="享受你的音乐专属推荐">
+        <div class="item" data-section="songplay" title="享受你的音乐专属推荐">
           <div class="icon icon-item"></div>
           私人FM
         </div>
-        <div class="drop">
-          <div class="drop-title">
-            <div class="icon icon-fold"></div>
-            排行榜
-          </div>
-          <div class="drop-items hidden">
-            <div class="item" data-section="board">
-              <div class="icon icon-item"></div>
-              board1
-            </div>
-            <div class="item" data-section="">
-              <div class="icon icon-item"></div>
-              board2
-            </div>
-            <div class="item" data-section="">
-              <div class="icon icon-item"></div>
-              board3
-            </div>
-          </div>
+        <div class="item" data-section="board" title="最热音乐榜">
+          <div class="icon icon-item"></div>
+          排行榜
         </div>
         <div class="title">我的</div>
         <div class="drop">
@@ -121,7 +107,7 @@
             本地音乐
           </div>
           <div class="drop-items hidden">
-            <div class="item" data-section="l-song">
+            <div class="item" data-section="songs">
               <div class="icon icon-item"></div>
               歌曲
             </div>
@@ -140,7 +126,7 @@
             <div class="icon icon-fold"></div>最近播放
           </div>
           <div class="drop-items hidden">
-            <div class="item" data-section="r-song">
+            <div class="item" data-section="songs">
               <div class="icon icon-item"></div>
               歌曲
             </div>
@@ -155,8 +141,8 @@
             <div class="icon icon-fold"></div>下载管理
           </div>
           <div class="drop-items hidden">
-            <div class="item" data-section="d-song">
-              <div class="icon icon-item"></div>
+            <div class="item" data-section="songs">
+              <div class="icon icon-item" ></div>
               歌曲
             </div>
             <div class="item" data-section="d-show">
@@ -177,7 +163,7 @@
             <div class="icon icon-fold"></div>创建的歌单
           </div>
           <div class="drop-items hidden">
-            <div class="item" data-section="list-my">我喜欢的</div>
+            <div class="item to-list" data-section="songlist">我喜欢的</div>
           </div>
         </div>
         <div class="drop">
@@ -185,7 +171,7 @@
             <div class="icon icon-fold"></div>收藏的歌单
           </div>
           <div class="drop-items hidden">
-            <div class="item" data-section="list-bala">bala</div>
+            <div class="item to-list" data-section="songlist">bala</div>
           </div>
         </div>
       </div>
@@ -193,7 +179,6 @@
         <div class="title">收藏</div>
         <div class="item" data-section="fav-album">专辑</div>
         <div class="item" data-section="fav-singer">歌手</div>
-        <div class="item" data-section="fav-mv">MV</div>
         <div class="item" data-section="fav-page">专栏</div>
       </div>
       <div class="nav2 hidden" data-id="msg">
@@ -226,7 +211,7 @@
     </div>
     <div class="play-info">
       <div class="info-bar">
-        <button class="cover"></button>
+        <button class="cover to-song" data-section="songplay"></button>
         <div class="info">
           <span class="info-name">Love of my life</span>
           <span class="artist">Queen</span>
@@ -251,7 +236,6 @@
     require('./assets/nav.js');
     require('./assets/import.js');
     require('./assets/recomand.js');
-    require('./assets/board.js');
   </script>
 </body>
 

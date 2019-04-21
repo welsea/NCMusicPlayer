@@ -1,0 +1,185 @@
+<template class="task-template">
+    <section id="comment-section" class="section hidden">
+        <div>
+            <div class="comment">
+                <div class="line-1">
+                    <div class="avatar">
+                        <img src="./icon/avatar.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="name">asdfasdfasfsafsdfs</div>
+                        <dv class="time">2019-06-55</dv>
+                    </div>
+                </div>
+                <div class="comment-content">jshadflkjhsdlkfjhasdljkfh</div>
+                <div class="action">
+                    <button class="reply">R</button>
+                    <button class="like">999</button>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="line-1">
+                    <div class="avatar">
+                        <img src="./icon/avatar.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="name">asdfasdfasfsafsdfs</div>
+                        <dv class="time">2019-06-55</dv>
+                    </div>
+                </div>
+                <div class="comment-content">hfakljdshfaksjdhflhfdlskjdfalskdf</div>
+                <div class="action">
+                    <button class="reply">R</button>
+                    <button class="like">999</button>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="line-1">
+                    <div class="avatar">
+                        <img src="./icon/avatar.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="name">asdfasdfasfsafsdfs</div>
+                        <dv class="time">2019-06-55</dv>
+                    </div>
+                </div>
+                <div class="comment-content">hfakljdshfaksjdhflhfdlskjdfalskdf</div>
+                <div class="action">
+                    <button class="reply">R</button>
+                    <button class="like">999</button>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="line-1">
+                    <div class="avatar">
+                        <img src="./icon/avatar.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="name">asdfasdfasfsafsdfs</div>
+                        <dv class="time">2019-06-55</dv>
+                    </div>
+                </div>
+                <div class="comment-content">hfakljdshfaksjdhflhfdlskjdfalskdf</div>
+                <div class="action">
+                    <button class="reply">R</button>
+                    <button class="like">999</button>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="line-1">
+                    <div class="avatar">
+                        <img src="./icon/avatar.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="name">asdfasdfasfsafsdfs</div>
+                        <dv class="time">2019-06-55</dv>
+                    </div>
+                </div>
+                <div class="comment-content">hfakljdshfaksjdhflhfdlskjdfalskdf</div>
+                <div class="action">
+                    <button class="reply">R</button>
+                    <button class="like">999</button>
+                </div>
+            </div>
+            <div class="comment">
+                <div class="line-1">
+                    <div class="avatar">
+                        <img src="./icon/avatar.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="name">asdfasdfasfsafsdfs</div>
+                        <dv class="time">2019-06-55</dv>
+                    </div>
+                </div>
+                <div class="comment-content">hfakljdshfaksjdhflhfdlskjdfalskdf</div>
+                <div class="action">
+                    <button class="reply">R</button>
+                    <button class="like">999</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+<style scoped>
+    #comment-section>div {
+        width: 96%;
+        height: 96%;
+        padding: 2% 2%;
+    }
+
+    #comment-section .comment {
+        display: flex;
+        width: -webkit-calc(100% - 20px);
+        height: 20%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-bottom: 1%;
+        padding: 10px;
+        flex-direction: column;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    #comment-section .line-1 {
+        display: flex;
+        font-size: 13px;
+        height: 40px;
+    }
+
+    #comment-section .avatar {
+        margin: 0 20px 0 0;
+    }
+
+    #comment-section .time {
+        font-size: 12px;
+    }
+
+    #comment-section .action {
+        height: 30px;
+        text-align: right
+    }
+
+    #comment-section button {
+        border: none;
+        background-color: transparent;
+        height: 30px;
+    }
+
+    .comment-content {
+        height: -webkit-calc(100% - 70px);
+        word-break: break-all;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+
+    #comment-section>div {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        word-break: break-word;
+    }
+
+    #comment-section>div::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 6px;
+        /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+
+    #comment-section>div::-webkit-scrollbar-thumb {
+        /*滚动条方块*/
+        border-radius: 6px;
+        /* -webkit-box-shadow: inset 0 0 5px #d4d4d4; */
+        background: #d4d4d4;
+    }
+
+    #comment-section>div::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        /* -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2); */
+        /* border-radius: 10px; */
+        /* background: #EDEDED; */
+        border: none;
+        background: none;
+    }
+</style>
